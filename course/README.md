@@ -12,6 +12,11 @@
   * [02 เนื้อหาบทเรียน (Content)](./chapter-01-introduction/02-content.md)
   * [03 แบบทดสอบ (Quiz)](./chapter-01-introduction/03-quiz.md)
   * [04 ปฏิบัติการ (Lab)](./chapter-01-introduction/04-lab.md)
+* **[บทที่ 2: การจัดเลย์เอาต์หน้าจอด้วย Flexbox](./chapter-02-flexbox-layout/)**
+  * [01 แผนการสอน (Lesson Plan)](./chapter-02-flexbox-layout/01-lesson-plan.md)
+  * [02 เนื้อหาบทเรียน (Content)](./chapter-02-flexbox-layout/02-content.md)
+  * [03 แบบทดสอบ (Quiz)](./chapter-02-flexbox-layout/03-quiz.md)
+  * [04 ปฏิบัติการ (Lab)](./chapter-02-flexbox-layout/04-lab.md)
 
 ---
 
