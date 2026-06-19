@@ -37,6 +37,11 @@
   * [02 เนื้อหาบทเรียน (Content)](./chapter-06-expo-router/02-content.md)
   * [03 แบบทดสอบ (Quiz)](./chapter-06-expo-router/03-quiz.md)
   * [04 ปฏิบัติการ (Lab)](./chapter-06-expo-router/04-lab.md)
+* **[บทที่ 7: การตกแต่งอินเทอร์เฟซ ไอคอน และรูปภาพประสิทธิภาพสูง](./chapter-07-styling-icons-images/)**
+  * [01 แผนการสอน (Lesson Plan)](./chapter-07-styling-icons-images/01-lesson-plan.md)
+  * [02 เนื้อหาบทเรียน (Content)](./chapter-07-styling-icons-images/02-content.md)
+  * [03 แบบทดสอบ (Quiz)](./chapter-07-styling-icons-images/03-quiz.md)
+  * [04 ปฏิบัติการ (Lab)](./chapter-07-styling-icons-images/04-lab.md)
 
 ---
 
