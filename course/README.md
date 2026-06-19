@@ -22,8 +22,11 @@
   * [02 เนื้อหาบทเรียน (Content)](./chapter-03-core-components/02-content.md)
   * [03 แบบทดสอบ (Quiz)](./chapter-03-core-components/03-quiz.md)
   * [04 ปฏิบัติการ (Lab)](./chapter-03-core-components/04-lab.md)
-* **[บทที่ 4: การจัดการสถานะและการแสดงผลรายการข้อมูล](./chapter-04-state-props-lists/)**
-  * [01 แผนการสอน (Lesson Plan)](./chapter-04-state-props-lists/01-lesson-plan.md)
+* **[บทที่ 4: การจัดการสถานะ พร็อพส์ และแบบฟอร์มรับข้อมูล](./chapter-04-state-props-forms/)**
+  * [01 แผนการสอน (Lesson Plan)](./chapter-04-state-props-forms/01-lesson-plan.md)
+  * [02 เนื้อหาบทเรียน (Content)](./chapter-04-state-props-forms/02-content.md)
+  * [03 แบบทดสอบ (Quiz)](./chapter-04-state-props-forms/03-quiz.md)
+  * [04 ปฏิบัติการ (Lab)](./chapter-04-state-props-forms/04-lab.md)
 
 ---
 
