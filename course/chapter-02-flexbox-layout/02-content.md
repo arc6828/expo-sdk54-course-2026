@@ -201,3 +201,7 @@ const styles = StyleSheet.create({
   },
 });
 ```
+
+---
+
+← [ย้อนกลับแผนการสอน: 01-lesson-plan.md](./01-lesson-plan.md) | [กลับหน้าสารบัญหลัก (Course Index)](../README.md) | [ทำแบบทดสอบถัดไป: 03-quiz.md](./03-quiz.md) →
