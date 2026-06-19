@@ -42,6 +42,36 @@
   * [02 เนื้อหาบทเรียน (Content)](./chapter-07-styling-icons-images/02-content.md)
   * [03 แบบทดสอบ (Quiz)](./chapter-07-styling-icons-images/03-quiz.md)
   * [04 ปฏิบัติการ (Lab)](./chapter-07-styling-icons-images/04-lab.md)
+* **[บทที่ 8: การเก็บข้อมูลในเครื่องและการเชื่อมต่อเครือข่าย API](./chapter-08-storage-api/)**
+  * [01 แผนการสอน (Lesson Plan)](./chapter-08-storage-api/01-lesson-plan.md)
+  * [02 เนื้อหาบทเรียน (Content)](./chapter-08-storage-api/02-content.md)
+  * [03 แบบทดสอบ (Quiz)](./chapter-08-storage-api/03-quiz.md)
+  * [04 ปฏิบัติการ (Lab)](./chapter-08-storage-api/04-lab.md)
+* **[บทที่ 9: พิกัดตำแหน่ง แผนที่ และเซนเซอร์อุปกรณ์](./chapter-09-location-maps-sensors/)**
+  * [01 แผนการสอน (Lesson Plan)](./chapter-09-location-maps-sensors/01-lesson-plan.md)
+  * [02 เนื้อหาบทเรียน (Content)](./chapter-09-location-maps-sensors/02-content.md)
+  * [03 แบบทดสอบ (Quiz)](./chapter-09-location-maps-sensors/03-quiz.md)
+  * [04 ปฏิบัติการ (Lab)](./chapter-09-location-maps-sensors/04-lab.md)
+* **[บทที่ 10: การใช้งานคลาวด์ดาต้าเบสด้วย Supabase](./chapter-10-supabase-database/)**
+  * [01 แผนการสอน (Lesson Plan)](./chapter-10-supabase-database/01-lesson-plan.md)
+  * [02 เนื้อหาบทเรียน (Content)](./chapter-10-supabase-database/02-content.md)
+  * [03 แบบทดสอบ (Quiz)](./chapter-10-supabase-database/03-quiz.md)
+  * [04 ปฏิบัติการ (Lab)](./chapter-10-supabase-database/04-lab.md)
+* **[บทที่ 11: การใช้งานกล้อง อัลบั้มภาพ และระบบจัดเก็บไฟล์เนทีฟร่วมกับคลาวด์](./chapter-11-camera-imagepicker/)**
+  * [01 แผนการสอน (Lesson Plan)](./chapter-11-camera-imagepicker/01-lesson-plan.md)
+  * [02 เนื้อหาบทเรียน (Content)](./chapter-11-camera-imagepicker/02-content.md)
+  * [03 แบบทดสอบ (Quiz)](./chapter-11-camera-imagepicker/03-quiz.md)
+  * [04 ปฏิบัติการ (Lab)](./chapter-11-camera-imagepicker/04-lab.md)
+* **[บทที่ 12: ระบบยืนยันตัวตนและการเข้าถึงข้อมูลด้วย Supabase Authentication](./chapter-12-supabase-auth/)**
+  * [01 แผนการสอน (Lesson Plan)](./chapter-12-supabase-auth/01-lesson-plan.md)
+  * [02 เนื้อหาบทเรียน (Content)](./chapter-12-supabase-auth/02-content.md)
+  * [03 แบบทดสอบ (Quiz)](./chapter-12-supabase-auth/03-quiz.md)
+  * [04 ปฏิบัติการ (Lab)](./chapter-12-supabase-auth/04-lab.md)
+* **[บทที่ 13: การดีบั๊ก การสร้างแอปพลิเคชัน และการเผยแพร่ด้วย EAS Build](./chapter-13-debugging-eas-build/)**
+  * [01 แผนการสอน (Lesson Plan)](./chapter-13-debugging-eas-build/01-lesson-plan.md)
+  * [02 เนื้อหาบทเรียน (Content)](./chapter-13-debugging-eas-build/02-content.md)
+  * [03 แบบทดสอบ (Quiz)](./chapter-13-debugging-eas-build/03-quiz.md)
+  * [04 ปฏิบัติการ (Lab)](./chapter-13-debugging-eas-build/04-lab.md)
 
 ---
 
