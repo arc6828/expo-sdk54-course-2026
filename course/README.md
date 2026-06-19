@@ -27,6 +27,16 @@
   * [02 เนื้อหาบทเรียน (Content)](./chapter-04-state-props-forms/02-content.md)
   * [03 แบบทดสอบ (Quiz)](./chapter-04-state-props-forms/03-quiz.md)
   * [04 ปฏิบัติการ (Lab)](./chapter-04-state-props-forms/04-lab.md)
+* **[บทที่ 5: การแสดงผลรายการข้อมูลและประสิทธิภาพการทำงาน](./chapter-05-lists-flatlist/)**
+  * [01 แผนการสอน (Lesson Plan)](./chapter-05-lists-flatlist/01-lesson-plan.md)
+  * [02 เนื้อหาบทเรียน (Content)](./chapter-05-lists-flatlist/02-content.md)
+  * [03 แบบทดสอบ (Quiz)](./chapter-05-lists-flatlist/03-quiz.md)
+  * [04 ปฏิบัติการ (Lab)](./chapter-05-lists-flatlist/04-lab.md)
+* **[บทที่ 6: ระบบนำทางและสถาปัตยกรรมการเปลี่ยนหน้าจอด้วย Expo Router](./chapter-06-expo-router/)**
+  * [01 แผนการสอน (Lesson Plan)](./chapter-06-expo-router/01-lesson-plan.md)
+  * [02 เนื้อหาบทเรียน (Content)](./chapter-06-expo-router/02-content.md)
+  * [03 แบบทดสอบ (Quiz)](./chapter-06-expo-router/03-quiz.md)
+  * [04 ปฏิบัติการ (Lab)](./chapter-06-expo-router/04-lab.md)
 
 ---
 
