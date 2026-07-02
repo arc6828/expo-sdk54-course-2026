@@ -15,7 +15,7 @@
 
 ---
 
-## 12.2 สถาปัตยกรรมระบบของ Supabase Auth (GoTrue Service)
+## 12.2 สถาปัตยกรรมระบบของ Supabase Auth (Supabase, 2024) (GoTrue Service)
 
 Supabase มีระบบที่พัฒนาขึ้นจากบริการหลังบ้านแบบ Open Source ชื่อ **GoTrue API** ซึ่งคอยจัดสรรและประมวลผลข้อมูลผู้ใช้อยู่เบื้องหลัง โดยมีฟังก์ชันการยืนยันตัวตนที่หลากหลาย เช่น Email/Password, Magic Link, และ OAuth (เช่น Sign in with Google หรือ Apple)
 
@@ -112,7 +112,7 @@ export default function RootScreen() {
 
 ---
 
-## 12.5 การรักษาความปลอดภัยระดับอุปกรณ์ด้วย expo-secure-store
+## 12.5 การรักษาความปลอดภัยระดับอุปกรณ์ด้วย expo-secure-store (Expo, 2024)
 
 ตามค่าเริ่มต้นของ Supabase JS Client ในโปรเจกต์ทั่วไปมักจะเก็บโทเค็นของระบบลงใน `AsyncStorage` ของเครื่องมือถือ แต่มีข้อเสียร้ายแรงด้านความปลอดภัยคือ **AsyncStorage เก็บข้อมูลไว้เป็นเพียงไฟล์ข้อความ Plaintext JSON ธรรมดาบนเครื่อง** ซึ่งไม่มีการเข้ารหัสข้อมูล (Encryption) ทำให้โทรศัพท์ที่ผ่านการ Root หรือ Jailbreak สามารถแอบแกะโทเค็นไปสวมสิทธิ์แทนเจ้าของได้
 
@@ -242,6 +242,15 @@ const { user, signOut } = useAuth();
 **การรักษาความปลอดภัยระดับอุปกรณ์ด้วย expo-secure-store:** การเก็บบันทึกข้อมูลโทเค็นความปลอดภัยลงใน AsyncStorage มีความเสี่ยงเนื่องจากไม่มีการเข้ารหัสข้อมูล (Plaintext) ผู้พัฒนาโปรเจกต์เชิงพาณิชย์จึงบังคับใช้ expo-secure-store ในการเข้ารหัสข้อมูลระดับลึกผ่านระบบฮาร์ดแวร์ Key Store ของระบบปฏิบัติการ โดยเราสามารถจัดทำ ExpoSecureStoreAdapter มาต่อเชื่อมกับตัวแอป Supabase client ได้เพื่อความปลอดภัยขั้นสูงสุด
 
 **การรีแฟกเตอร์ไปใช้ useContext และ AuthContext:** เมื่อโครงสร้างแอปพลิเคชันใหญ่ขึ้น การส่งผ่านค่าเซสชันข้อมูลลงไปทีละหน้าจอ (Prop Drilling) จะยุ่งยากและไร้ประสิทธิภาพ การรีแฟกเตอร์โครงสร้างสเตตล็อกอินหลักด้วยเครื่องมือ React Context API อย่างเช่น useContext และ AuthProvider จะช่วยแก้ปัญหาโดยทำหน้าที่กระจายสัญญาณส่งมอบข้อมูลสิทธิ์ไปหาคอมโพเนนต์ย่อยทั่วทั้งแอปพลิเคชันได้โดยตรง
+
+
+---
+
+## 12.8 แหล่งข้อมูลอ้างอิงและศึกษาเพิ่มเติม (References)
+
+* **Supabase.** (2024). *Supabase Auth with React Native*. จาก https://supabase.com/docs/guides/auth/auth-helpers/react-native
+* **Supabase.** (2024). *Supabase JavaScript Auth API Reference*. จาก https://supabase.com/docs/reference/javascript/auth-signup
+* **Supabase.** (2024). *User Management with Supabase*. จาก https://supabase.com/docs/guides/auth
 
 ---
 

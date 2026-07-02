@@ -17,7 +17,7 @@
 
 ## 5.2 การแก้ไขด้วย FlatList: Virtualization และ Recycling
 
-เพื่อจัดการปัญหาข้อมูลล้นจอ React Native ได้จัดเตรียมคอมโพเนนต์ **`FlatList`** (ซึ่งสืบทอดกลไกมาจาก `VirtualizedList`) โดยใช้เทคนิคสถาปัตยกรรมระดับเนทีฟในการจัดระเบียบพื้นที่หน่วยความจำดังนี้:
+เพื่อจัดการปัญหาข้อมูลล้นจอ React Native ได้จัดเตรียมคอมโพเนนต์ **`FlatList`** (React Native, 2024) (ซึ่งสืบทอดกลไกมาจาก `VirtualizedList`) โดยใช้เทคนิคสถาปัตยกรรมระดับเนทีฟในการจัดระเบียบพื้นที่หน่วยความจำดังนี้:
 
 ### 1. ระบบจำลองเสมือนจริง (Virtualization)
 `FlatList` จะวาดเรนเดอร์เฉพาะคอมโพเนนต์รายการที่ **ปรากฏตัวอยู่ในขอบเขตหน้าจอจริงเท่านั้น** (บวกกับพื้นที่ข้างเคียงล่วงหน้าเล็กน้อย เรียกว่า Window Buffer) ข้อมูลที่อยู่นอกจอจะยังไม่ถูกนำมาประมวลผล
@@ -97,7 +97,7 @@ export default function ApiListScreen() {
   const [posts, setPosts] = useState<Post[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
 
-  // 1. ฟังก์ชันดึงข้อมูลจาก REST API ของ JSONPlaceholder
+  // 1. ฟังก์ชันดึงข้อมูลจาก REST API ของ JSONPlaceholder (JSONPlaceholder, 2024)
   const fetchPosts = async () => {
     try {
       setLoading(true);
@@ -207,7 +207,7 @@ const styles = StyleSheet.create({
 
 ---
 
-## 5.7 การจัดกลุ่มข้อมูลด้วย SectionList
+## 5.7 การจัดกลุ่มข้อมูลด้วย SectionList (React Native, 2024)
 
 เมื่อข้อมูลรายการมีความจำเป็นที่จะต้องจัดแยกจำแนกหมวดหมู่ (เช่น คลังรายชื่ออักษรขึ้นต้น A-Z, การแบ่งหมวดหมู่เมนูอาหาร) คอมโพเนนต์ `SectionList` จะช่วยอำนวยความสะดวกในการจัดสรรความลื่นไหลได้เป็นหมวดหมู่:
 
@@ -287,6 +287,15 @@ const styles = StyleSheet.create({
 **ฟีเจอร์ Pull-to-Refresh และ Infinite Scroll:** แอปพลิเคชันที่ทันสมัยสามารถยกระดับความสะดวกได้ด้วยระบบ Pull-to-Refresh ที่เปิดทางให้ผู้ใช้นิ้วปัดหน้าจอลงเพื่อรีเฟรชข้อมูลผ่านพร็อพส์ refreshing และ onRefresh รวมถึงการทำ Infinite Scroll เพื่อดาวน์โหลดหน้าถัดไปแบบต่อเนื่องผ่านพร็อพส์ onEndReached และการกำหนดสัดส่วนระยะเริ่มโหลดผ่าน onEndReachedThreshold
 
 **การจัดกลุ่มข้อมูลด้วย SectionList:** สำหรับข้อมูลที่ต้องจัดแยกเป็นหมวดหมู่อย่างชัดเจน SectionList คือตัวเลือกในการแสดงผลที่ตอบโจทย์ โดยข้อมูลนำเข้าในพร็อพส์ sections จะต้องจัดเรียงกลุ่มข้อมูลในรูปแบบโครงสร้างออบเจกต์ที่มีคีย์ title สำหรับป้ายหัวข้อกลุ่ม และคีย์ data สำหรับบรรจุรายการย่อย ซึ่งระบบจะทำการคำนวณและวาดป้ายแถบหัวข้อกลุ่ม (Sticky Header) ให้สอดคล้องกันโดยอัตโนมัติ
+
+
+---
+
+## 5.8 แหล่งข้อมูลอ้างอิงและศึกษาเพิ่มเติม (References)
+
+* **JSONPlaceholder.** (2024). *JSONPlaceholder - Free Fake REST API*. จาก https://jsonplaceholder.typicode.com/
+* **React Native.** (2024). *FlatList API Reference*. จาก https://reactnative.dev/docs/flatlist
+* **React Native.** (2024). *SectionList API Reference*. จาก https://reactnative.dev/docs/sectionlist
 
 ---
 

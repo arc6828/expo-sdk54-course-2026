@@ -41,7 +41,7 @@ const requestGalleryPermission = async () => {
 
 ---
 
-## 11.2 การใช้งาน CameraView เพื่อพรีวิวภาพสด (Camera Live Preview)
+## 11.2 การใช้งาน CameraView เพื่อพรีวิว (Expo, 2024)ภาพสด (Camera Live Preview)
 
 ใน Expo SDK 54 คอมโพเนนต์หลักที่ใช้เปิดช่องเลนส์รับภาพสดคือ **`CameraView`** (ถูกพัฒนามาทดแทนคอมโพเนนต์ `Camera` ตัวเดิม) 
 
@@ -133,7 +133,7 @@ export default function CaptureComponent() {
 
 ---
 
-## 11.4 การเลือกรูปภาพและสื่อผ่าน expo-image-picker (Image Library API)
+## 11.4 การเลือกรูปภาพและสื่อผ่าน expo-image-picker (Expo, 2024) (Image Library API)
 
 ในการพัฒนาฟีเจอร์ดึงไฟล์ภาพที่มีอยู่แล้วในคลังอัลบั้มของเครื่องขึ้นมาจัดแสดง เราจะใช้ไลบรารีมาตรฐานยอดนิยมคือ **`expo-image-picker`** ผ่านคำสั่ง Asynchronous ชื่อ **`launchImageLibraryAsync()`**:
 
@@ -174,7 +174,7 @@ const styles = StyleSheet.create({
 
 ---
 
-## 11.5 ระบบจัดการไฟล์แบบที่ 1: Private Sandbox Storage (แอปมองเห็นเฉพาะตัว)
+## 11.5 ระบบจัดการไฟล์แบบที่ 1: Private Sandbox Storage (Expo, 2024) (แอปมองเห็นเฉพาะตัว)
 
 รูปภาพที่ได้จากการสั่งถ่ายด้วยกล้องถ่ายรูป หรือได้จากการดึงภาพของ Image Picker จะได้รับการสร้างเป็นที่อยู่พาธชั่วคราวอยู่ใน **Cache Directory** เสมอ (เช่น `file:///.../Caches/xxx.jpg`)
 
@@ -349,6 +349,15 @@ const uploadToSupabaseCloud = async (localFileUri: string): Promise<string | nul
 **ระบบจัดการไฟล์แบบที่ 2 (Shared Media Storage):** กรณีที่รูปถ่ายจากแอปพลิเคชันของเราต้องการส่งต่อไปใช้งานร่วมกับแกลเลอรีหลักของโทรศัพท์ เพื่อเปิดโอกาสให้แอปภายนอก เช่น LINE หรือ Facebook สแกนดึงรูปนี้ไปใช้ได้ต่อ เราจะเปลี่ยนจากการเก็บข้อมูลในแซนด์บ็อกซ์ส่วนตัวมาส่งออกข้อมูลผ่านคำสั่ง createAssetAsync ของ expo-media-library เพื่อไปจดทะเบียนลงทะเบียนไฟล์ในคลังภาพสาธารณะของระบบ
 
 **ระบบจัดการไฟล์แบบที่ 3 (Cloud Storage Network):** เพื่อให้รูปภาพถ่ายสามารถเผยแพร่ข้ามอุปกรณ์และส่งต่อขึ้นฝั่งเว็บไซต์ได้ ข้อมูลรูปภาพจำเป็นต้องอัปโหลดขึ้นฝั่งคลาวด์ เช่น Supabase Storage Buckets โดย React Native จะต้องใช้ expo-file-system ในการอ่านข้อมูลจากพิกัดไฟล์ออกมาเป็นสตริงรหัส Base64 จากนั้นใช้ไลบรารี base64-js ถอดรหัสเป็น ArrayBuffer และส่งยิงอัปโหลดขึ้นเซิร์ฟเวอร์เพื่อให้ได้ลิงก์ตรง (Public URL) สาธารณะ
+
+
+---
+
+## 11.8 แหล่งข้อมูลอ้างอิงและศึกษาเพิ่มเติม (References)
+
+* **Expo.** (2024). *Camera*. จาก https://docs.expo.dev/versions/v54.0.0/sdk/camera/
+* **Expo.** (2024). *FileSystem*. จาก https://docs.expo.dev/versions/v54.0.0/sdk/filesystem/
+* **Expo.** (2024). *ImagePicker*. จาก https://docs.expo.dev/versions/v54.0.0/sdk/imagepicker/
 
 ---
 

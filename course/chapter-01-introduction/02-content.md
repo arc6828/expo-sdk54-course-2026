@@ -7,16 +7,16 @@
 ## 1.1 ทำความรู้จัก React Native และ Expo
 
 ### React Native คืออะไร?
-**React Native** คือโอเพนซอร์สเฟรมเวิร์กที่พัฒนาโดย Meta (Facebook) ช่วยให้ผู้พัฒนาสามารถสร้างแอปพลิเคชันสำหรับ iOS และ Android ได้พร้อมกันด้วยการเขียนโค้ดภาษา JavaScript และเฟรมเวิร์ก React แทนที่จะต้องแยกกันเขียนด้วย Swift/Objective-C (iOS) และ Kotlin/Java (Android)
+**React Native** คือโอเพนซอร์สเฟรมเวิร์กที่พัฒนาโดย Meta (Facebook) ช่วยให้ผู้พัฒนาสามารถสร้างแอปพลิเคชันสำหรับ iOS และ Android ได้พร้อมกันด้วยการเขียนโค้ดภาษา JavaScript และเฟรมเวิร์ก React แทนที่จะต้องแยกกันเขียนด้วย Swift/Objective-C (iOS) และ Kotlin/Java (Android) (React Native, 2024)
 
 * **Native Performance:** แตกต่างจาก Hybrid App ยุคเก่าที่รันผ่าน Web View เพราะ React Native จะแปลงคอมโพเนนต์ JavaScript ไปเป็นคอมโพเนนต์ Native จริง ๆ ของอุปกรณ์ ทำให้ได้ประสิทธิภาพที่ไหลลื่นและรูปลักษณ์ที่เป็นธรรมชาติ
 * **Cross-Platform:** เขียนโค้ดชุดเดียว (Single Codebase) สามารถแชร์การทำงานได้มากกว่า 80-90% ระหว่างแพลตฟอร์ม
 
 ### Expo คืออะไร?
-**Expo** คือชุดเครื่องมือ (Suite of Tools) และบริการเสริมที่ครอบทับอยู่บน React Native อีกชั้นหนึ่ง เพื่อช่วยลดความซับซ้อนในการตั้งค่าและเขียนโค้ด Native โดยในปัจจุบัน Expo เป็นเครื่องมือมาตรฐานที่ทางทีมงาน React Native แนะนำอย่างเป็นทางการในการเริ่มต้นโครงการใหม่
+**Expo** คือชุดเครื่องมือ (Suite of Tools) และบริการเสริมที่ครอบทับอยู่บน React Native อีกชั้นหนึ่ง เพื่อช่วยลดความซับซ้อนในการตั้งค่าและเขียนโค้ด Native โดยในปัจจุบัน Expo เป็นเครื่องมือมาตรฐานที่ทางทีมงาน React Native แนะนำอย่างเป็นทางการในการเริ่มต้นโครงการใหม่ (Expo, 2024)
 
 > [!NOTE]
-> **Expo SDK 54** นำเสนอฟีเจอร์ความปลอดภัย ประสิทธิภาพที่สูงขึ้น การใช้ React 19 และมาพร้อมกับโครงสร้างการจัดเส้นทางโฟลเดอร์แบบไฟล์ (File-based Routing) เวอร์ชันล่าสุดผ่าน **Expo Router v6**
+> **Expo SDK 54** นำเสนอฟีเจอร์ความปลอดภัย ประสิทธิภาพที่สูงขึ้น การใช้ React 19 และมาพร้อมกับโครงสร้างการจัดเส้นทางโฟลเดอร์แบบไฟล์ (File-based Routing) เวอร์ชันล่าสุดผ่าน **Expo Router v6** (Expo, 2024)
 
 ---
 
@@ -41,7 +41,7 @@
 
 ### ขั้นที่ 1: ติดตั้ง Node.js
 Node.js เป็นโปรแกรมจำเป็นสำหรับรันสคริปต์ JavaScript และตัวติดตั้งแพ็กเกจ (npm)
-1. ไปที่เว็บไซต์ [Node.js Official Website](https://nodejs.org/)
+1. ไปที่เว็บไซต์ [Node.js Official Website](https://nodejs.org/) (Node.js, 2024)
 2. ดาวน์โหลดและติดตั้งเวอร์ชัน **LTS** (แนะนำเวอร์ชัน 20 หรือ 22 ขึ้นไป)
 3. ตรวจสอบความสำเร็จของการติดตั้งใน Terminal/PowerShell:
    ```bash
@@ -51,14 +51,14 @@ Node.js เป็นโปรแกรมจำเป็นสำหรับร
 
 ### ขั้นที่ 2: ติดตั้ง Visual Studio Code (VS Code)
 VS Code เป็นโปรแกรมเขียนโค้ดและแก้ไขข้อความยอดนิยม
-1. ดาวน์โหลดที่ [VS Code Website](https://code.visualstudio.com/)
+1. ดาวน์โหลดที่ [VS Code Website](https://code.visualstudio.com/) (Microsoft, 2024)
 2. ติดตั้งส่วนขยาย (Extensions) ที่แนะนำสำหรับการเขียน React Native:
    * **ES7+ React/Redux/React-Native snippets** (ช่วยคีย์ลัดสร้างโค้ด)
    * **Prettier - Code formatter** (ช่วยจัดรูปแบบโค้ดอัตโนมัติ)
    * **Expo Tools** (ช่วยตรวจสอบไฟล์ `app.json`)
 
 ### ขั้นที่ 3: ติดตั้ง Git
-ใช้สำหรับการจัดการเวอร์ชันโค้ด (Version Control) ดาวน์โหลดได้จาก [Git SCM](https://git-scm.com/)
+ใช้สำหรับการจัดการเวอร์ชันโค้ด (Version Control) ดาวน์โหลดได้จาก [Git SCM](https://git-scm.com/) (Git, 2024)
 
 ### ขั้นที่ 4: ติดตั้งแอปพลิเคชัน Expo Go บนสมาร์ทโฟน
 1. **iOS:** ดาวน์โหลดแอปพลิเคชัน **Expo Go** จาก App Store
@@ -84,7 +84,7 @@ cd my-first-app
 ```
 
 ### การรีเซ็ตโปรเจคเริ่มต้น (Reset Project Layout)
-สำหรับเทมเพลตยุคใหม่ของ Expo ที่สร้างผ่านคำสั่งเริ่มต้น หากผู้เรียนไม่ต้องการหน้าจอตัวอย่างหรือ UI ที่ติดมากับระบบ (เช่น แถบ Tabs ด้านล่าง และหน้าจอ Explore) ทาง Expo มีสคริปต์ล้างโครงสร้างเพื่อให้คุณเริ่มต้นทำแอปจากศูนย์ได้อย่างรวดเร็ว:
+สำหรับเทมเพลตยุคใหม่ของ Expo ที่สร้างผ่านคำสั่งเริ่มต้น หากผู้เรียนไม่ต้องการหน้าจอตัวอย่างหรือ UI ที่ติดมากับระบบ (เช่น แถบ Tabs ด้านล่าง และหน้าจอ Explore) ทาง Expo มีสคริปต์ล้างโครงสร้างเพื่อให้คุณเริ่มต้นทำแอปจากศูนย์ได้อย่างรวดเร็ว (Expo, 2024):
 
 ```bash
 npm run reset-project
@@ -161,7 +161,7 @@ npm start
 npx expo start
 ```
 
-ตัวจัดการการรัน (Expo CLI) จะเริ่มต้นเซิร์ฟเวอร์ **Metro Bundler** และแสดงหน้าอินเทอร์เฟซควบคุมขึ้นมา รวมถึงสร้าง **QR Code** บนหน้าจอคอนโซล:
+ตัวจัดการการรัน (Expo CLI) จะเริ่มต้นเซิร์ฟเวอร์ **Metro Bundler** และแสดงหน้าอินเทอร์เฟซควบคุมขึ้นมา รวมถึงสร้าง **QR Code** บนหน้าจอคอนโซล (Expo, 2024):
 
 ```text
 › Metro waiting on exp://192.168.1.33:8081
@@ -202,6 +202,17 @@ npx expo start
 **โครงสร้างของโปรเจค React Native Expo SDK 54:** โฟลเดอร์ของโปรเจกต์ที่สร้างขึ้นจะแบ่งสัดส่วนการทำงานออกเป็น โฟลเดอร์ `app/` สำหรับเก็บหน้าจอและระบบการเปลี่ยนหน้าผ่านไฟล์ (Expo Router), โฟลเดอร์ `assets/` เก็บภาพไอคอนและส่วนประกอบด้านมีเดีย, ไฟล์ `app.json` ทำหน้าที่ควบคุมการตั้งค่าคุณสมบัติ (Metadata) ของแอป และไฟล์ `app/index.tsx` ซึ่งเป็นคอมโพเนนต์แรกที่แอปเรียกมาแสดงผลและทำหน้าที่เป็นจุดเริ่มต้นของโค้ดหลัก
 
 **การรันโปรเจคและการทดสอบแอปพลิเคชัน:** การรันแอปทำได้โดยใช้คำสั่ง `npm start` หรือ `npx expo start` เพื่อเริ่มการทำงานของ Metro Bundler ซึ่งจะทำการรวบรวมไฟล์เขียนโค้ดและส่งผลผ่าน QR Code ให้สแกนดูพฤติกรรมจริงผ่านแอป Expo Go บนอุปกรณ์สมาร์ทโฟน หรือทดสอบผ่านโปรแกรมจำลอง Emulator/Simulator โดยมีการสนับสนุนฟีเจอร์ Fast Refresh ที่ช่วยสะท้อนผลการแก้ไขโค้ดสู่หน้าจอทดสอบโดยทันที
+
+---
+
+## 1.8 แหล่งข้อมูลอ้างอิงและศึกษาเพิ่มเติม (References)
+
+* **Expo.** (2024). *Create an app*. จาก https://docs.expo.dev/versions/v54.0.0/get-started/create-a-project/
+* **Expo.** (2024). *Expo Router Introduction*. จาก https://docs.expo.dev/versions/v54.0.0/router/introduction/
+* **Git.** (2024). *Git Reference Manual*. จาก https://git-scm.com/doc
+* **Microsoft.** (2024). *Visual Studio Code Documentation*. จาก https://code.visualstudio.com/docs
+* **Node.js.** (2024). *Node.js Downloads*. จาก https://nodejs.org/
+* **React Native.** (2024). *Environment Setup*. จาก https://reactnative.dev/docs/environment-setup
 
 ---
 
