@@ -207,12 +207,12 @@ npx expo start
 
 ## 1.8 แหล่งข้อมูลอ้างอิงและศึกษาเพิ่มเติม (References)
 
-* **Expo.** (2024). *Create an app*. จาก https://docs.expo.dev/versions/v54.0.0/get-started/create-a-project/
-* **Expo.** (2024). *Expo Router Introduction*. จาก https://docs.expo.dev/versions/v54.0.0/router/introduction/
-* **Git.** (2024). *Git Reference Manual*. จาก https://git-scm.com/doc
-* **Microsoft.** (2024). *Visual Studio Code Documentation*. จาก https://code.visualstudio.com/docs
-* **Node.js.** (2024). *Node.js Downloads*. จาก https://nodejs.org/
-* **React Native.** (2024). *Environment Setup*. จาก https://reactnative.dev/docs/environment-setup
+* Expo. (2024). *Create an app*. จาก https://docs.expo.dev/versions/v54.0.0/get-started/create-a-project/
+* Expo. (2024). *Expo Router Introduction*. จาก https://docs.expo.dev/versions/v54.0.0/router/introduction/
+* Git. (2024). *Git Reference Manual*. จาก https://git-scm.com/doc
+* Microsoft. (2024). *Visual Studio Code Documentation*. จาก https://code.visualstudio.com/docs
+* Node.js. (2024). *Node.js Downloads*. จาก https://nodejs.org/
+* React Native. (2024). *Environment Setup*. จาก https://reactnative.dev/docs/environment-setup
 
 ---
 

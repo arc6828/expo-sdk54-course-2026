@@ -4,9 +4,9 @@
 
 ---
 
-## 10.1 สถาปัตยกรรม BaaS และคลาวด์ดาต้าเบสของ Supabase (Supabase, 2024)
+## 10.1 สถาปัตยกรรม BaaS และคลาวด์ดาต้าเบสของ Supabase
 
-**Supabase** เป็นแพลตฟอร์มหลังบ้านสำเร็จรูปที่เป็นมิตรต่อผู้พัฒนาและเปิดใช้งานแบบ Open-source โดยมีโครงสร้างฐานข้อมูลหลักเป็น **PostgreSQL** ซึ่งมีความเสถียรและรองรับความสัมพันธ์ของข้อมูล (Relational Database)
+**Supabase** เป็นแพลตฟอร์มหลังบ้านสำเร็จรูปที่เป็นมิตรต่อผู้พัฒนาและเปิดใช้งานแบบ Open-source (Supabase, 2024) โดยมีโครงสร้างฐานข้อมูลหลักเป็น **PostgreSQL** ซึ่งมีความเสถียรและรองรับความสัมพันธ์ของข้อมูล (Relational Database)
 
 ### ทำไมต้องเลือก Supabase?
 * **พร้อมใช้งานทันที:** มีระบบ Database, Auth, และ Storage มาให้พร้อมใช้โดยไม่ต้องติดตั้งและตั้งค่าระบบเครือข่ายเซิร์ฟเวอร์เอง
@@ -22,9 +22,9 @@
 
 ---
 
-## 10.2 การติดตั้งและตั้งค่า Supabase Client ใน Expo (Supabase, 2024) (SDK 54)
+## 10.2 การติดตั้งและตั้งค่า Supabase Client ใน Expo (SDK 54)
 
-เพื่อเชื่อมแอปพลิเคชัน Expo เข้าหาตารางฐานข้อมูล เราจะติดตั้งชุดซอฟต์แวร์พัฒนาอย่างเป็นทางการร่วมกับตัวช่วยจัดระเบียบ URL สำหรับ React Native:
+เพื่อเชื่อมแอปพลิเคชัน Expo เข้าหาตารางฐานข้อมูล เราจะติดตั้งชุดซอฟต์แวร์พัฒนาอย่างเป็นทางการร่วมกับตัวช่วยจัดระเบียบ URL สำหรับ React Native (Supabase, 2024):
 
 ```bash
 npm install @supabase/supabase-js react-native-url-polyfill
@@ -234,11 +234,11 @@ export default function LoadingExample() {
 
 ---
 
-## 10.8 แหล่งข้อมูลอ้างอิงและศึกษาเพิ่มเติม (References)
+## 10.9 แหล่งข้อมูลอ้างอิงและศึกษาเพิ่มเติม (References)
 
-* **Supabase.** (2024). *React Native Supabase Quickstart*. จาก https://supabase.com/docs/guides/getting-started/tutorials/with-react-native
-* **Supabase.** (2024). *Supabase Database Quickstart*. จาก https://supabase.com/docs/guides/database/overview
-* **Supabase.** (2024). *Supabase JavaScript Client Database API*. จาก https://supabase.com/docs/reference/javascript/select
+* Supabase. (2024). *React Native Supabase Quickstart*. จาก https://supabase.com/docs/guides/getting-started/tutorials/with-react-native
+* Supabase. (2024). *Supabase Database Quickstart*. จาก https://supabase.com/docs/guides/database/overview
+* Supabase. (2024). *Supabase JavaScript Client Database API*. จาก https://supabase.com/docs/reference/javascript/select
 
 ---
 

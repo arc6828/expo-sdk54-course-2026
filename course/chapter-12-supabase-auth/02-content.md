@@ -15,9 +15,9 @@
 
 ---
 
-## 12.2 สถาปัตยกรรมระบบของ Supabase Auth (Supabase, 2024) (GoTrue Service)
+## 12.2 สถาปัตยกรรมระบบของ Supabase Auth (GoTrue Service)
 
-Supabase มีระบบที่พัฒนาขึ้นจากบริการหลังบ้านแบบ Open Source ชื่อ **GoTrue API** ซึ่งคอยจัดสรรและประมวลผลข้อมูลผู้ใช้อยู่เบื้องหลัง โดยมีฟังก์ชันการยืนยันตัวตนที่หลากหลาย เช่น Email/Password, Magic Link, และ OAuth (เช่น Sign in with Google หรือ Apple)
+Supabase มีระบบที่พัฒนาขึ้นจากบริการหลังบ้านแบบ Open Source ชื่อ **GoTrue API** (Supabase, 2024) ซึ่งคอยจัดสรรและประมวลผลข้อมูลผู้ใช้อยู่เบื้องหลัง โดยมีฟังก์ชันการยืนยันตัวตนที่หลากหลาย เช่น Email/Password, Magic Link, และ OAuth (เช่น Sign in with Google หรือ Apple)
 
 ในบทเรียนนี้เราจะมุ่งเน้นไปที่การระบุตัวตนที่คลาสสิกและสำคัญที่สุดคือ **Email and Password Authentication** ซึ่งแอปจะคุยตรงกับเซิร์ฟเวอร์ GoTrue ผ่าน Supabase Client SDK
 
@@ -112,11 +112,11 @@ export default function RootScreen() {
 
 ---
 
-## 12.5 การรักษาความปลอดภัยระดับอุปกรณ์ด้วย expo-secure-store (Expo, 2024)
+## 12.5 การรักษาความปลอดภัยระดับอุปกรณ์ด้วย expo-secure-store
 
 ตามค่าเริ่มต้นของ Supabase JS Client ในโปรเจกต์ทั่วไปมักจะเก็บโทเค็นของระบบลงใน `AsyncStorage` ของเครื่องมือถือ แต่มีข้อเสียร้ายแรงด้านความปลอดภัยคือ **AsyncStorage เก็บข้อมูลไว้เป็นเพียงไฟล์ข้อความ Plaintext JSON ธรรมดาบนเครื่อง** ซึ่งไม่มีการเข้ารหัสข้อมูล (Encryption) ทำให้โทรศัพท์ที่ผ่านการ Root หรือ Jailbreak สามารถแอบแกะโทเค็นไปสวมสิทธิ์แทนเจ้าของได้
 
-สำหรับโมบายแอปพลิเคชันยุคใหม่ จึงบังคับให้นำโทเค็นข้อมูลลับเหล่านี้ไปเก็บไว้ในช่องเก็บข้อมูลลับที่มีระบบเข้ารหัสความปลอดภัยระดับฮาร์ดแวร์ (Keychain สำหรับ iOS และ Keystore สำหรับ Android) โดยเราจะใช้ไลบรารี **`expo-secure-store`**
+สำหรับโมบายแอปพลิเคชันยุคใหม่ จึงบังคับให้นำโทเค็นข้อมูลลับเหล่านี้ไปเก็บไว้ในช่องเก็บข้อมูลลับที่มีระบบเข้ารหัสความปลอดภัยระดับฮาร์ดแวร์ (Keychain สำหรับ iOS และ Keystore สำหรับ Android) โดยเราจะใช้ไลบรารี **`expo-secure-store`** (Expo, 2024)
 
 ### 1. การติดตั้ง Secure Store:
 ```bash
@@ -248,9 +248,10 @@ const { user, signOut } = useAuth();
 
 ## 12.8 แหล่งข้อมูลอ้างอิงและศึกษาเพิ่มเติม (References)
 
-* **Supabase.** (2024). *Supabase Auth with React Native*. จาก https://supabase.com/docs/guides/auth/auth-helpers/react-native
-* **Supabase.** (2024). *Supabase JavaScript Auth API Reference*. จาก https://supabase.com/docs/reference/javascript/auth-signup
-* **Supabase.** (2024). *User Management with Supabase*. จาก https://supabase.com/docs/guides/auth
+* Expo. (2024). *SecureStore*. จาก https://docs.expo.dev/versions/v54.0.0/sdk/securestore/
+* Supabase. (2024). *Supabase Auth with React Native*. จาก https://supabase.com/docs/guides/auth/auth-helpers/react-native
+* Supabase. (2024). *Supabase JavaScript Auth API Reference*. จาก https://supabase.com/docs/reference/javascript/auth-signup
+* Supabase. (2024). *User Management with Supabase*. จาก https://supabase.com/docs/guides/auth
 
 ---
 

@@ -4,9 +4,9 @@
 
 ---
 
-## 6.1 แนวคิดการจัดเส้นทางแบบอิงโครงสร้างไฟล์ (File-based Routing) (Expo, 2024)
+## 6.1 แนวคิดการจัดเส้นทางแบบอิงโครงสร้างไฟล์ (File-based Routing)
 
-File-based Routing คือการแปลงตำแหน่งเส้นทางของไฟล์ (File Paths) ในโฟลเดอร์พิเศษที่ตั้งชื่อว่า **`app/`** ให้กลายมาเป็นเส้นทางการนำทาง (Route Paths) ของแอปพลิเคชันโดยอัตโนมัติ:
+File-based Routing คือการแปลงตำแหน่งเส้นทางของไฟล์ (File Paths) ในโฟลเดอร์พิเศษที่ตั้งชื่อว่า **`app/`** ให้กลายมาเป็นเส้นทางการนำทาง (Route Paths) ของแอปพลิเคชันโดยอัตโนมัติ (Expo, 2024):
 
 ```text
 โครงสร้างในโฟลเดอร์ app/               URL / เส้นทางเข้าถึง
@@ -241,9 +241,9 @@ const styles = StyleSheet.create({
 
 ## 6.8 แหล่งข้อมูลอ้างอิงและศึกษาเพิ่มเติม (References)
 
-* **Expo.** (2024). *Create Routes with Expo Router*. จาก https://docs.expo.dev/versions/v54.0.0/router/create-pages/
-* **Expo.** (2024). *Expo Router Introduction*. จาก https://docs.expo.dev/versions/v54.0.0/router/introduction/
-* **Expo.** (2024). *Layouts with Expo Router*. จาก https://docs.expo.dev/versions/v54.0.0/router/layouts/
+* Expo. (2024). *Create Routes with Expo Router*. จาก https://docs.expo.dev/versions/v54.0.0/router/create-pages/
+* Expo. (2024). *Expo Router Introduction*. จาก https://docs.expo.dev/versions/v54.0.0/router/introduction/
+* Expo. (2024). *Layouts with Expo Router*. จาก https://docs.expo.dev/versions/v54.0.0/router/layouts/
 
 ---
 

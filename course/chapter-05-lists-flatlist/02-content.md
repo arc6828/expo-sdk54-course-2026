@@ -207,9 +207,9 @@ const styles = StyleSheet.create({
 
 ---
 
-## 5.7 การจัดกลุ่มข้อมูลด้วย SectionList (React Native, 2024)
+## 5.7 การจัดกลุ่มข้อมูลด้วย SectionList
 
-เมื่อข้อมูลรายการมีความจำเป็นที่จะต้องจัดแยกจำแนกหมวดหมู่ (เช่น คลังรายชื่ออักษรขึ้นต้น A-Z, การแบ่งหมวดหมู่เมนูอาหาร) คอมโพเนนต์ `SectionList` จะช่วยอำนวยความสะดวกในการจัดสรรความลื่นไหลได้เป็นหมวดหมู่:
+เมื่อข้อมูลรายการมีความจำเป็นที่จะต้องจัดแยกจำแนกหมวดหมู่ (เช่น คลังรายชื่ออักษรขึ้นต้น A-Z, การแบ่งหมวดหมู่เมนูอาหาร) คอมโพเนนต์ `SectionList` (React Native, 2024) จะช่วยอำนวยความสะดวกในการจัดสรรความลื่นไหลได้เป็นหมวดหมู่:
 
 ### โครงสร้างข้อมูลสำหรับ SectionList
 ข้อมูลในพร็อพส์ `sections` ต้องเป็นอาร์เรย์ของออบเจกต์ ซึ่งมีคีย์ชื่อ **`title`** (หรือคีย์จัดกลุ่มใด ๆ) และคีย์อาร์เรย์ชื่อ **`data`** บรรจุรายละเอียดลูกย่อยในกลุ่มนั้น:
@@ -291,11 +291,11 @@ const styles = StyleSheet.create({
 
 ---
 
-## 5.8 แหล่งข้อมูลอ้างอิงและศึกษาเพิ่มเติม (References)
+## 5.9 แหล่งข้อมูลอ้างอิงและศึกษาเพิ่มเติม (References)
 
-* **JSONPlaceholder.** (2024). *JSONPlaceholder - Free Fake REST API*. จาก https://jsonplaceholder.typicode.com/
-* **React Native.** (2024). *FlatList API Reference*. จาก https://reactnative.dev/docs/flatlist
-* **React Native.** (2024). *SectionList API Reference*. จาก https://reactnative.dev/docs/sectionlist
+* JSONPlaceholder. (2024). *JSONPlaceholder - Free Fake REST API*. จาก https://jsonplaceholder.typicode.com/
+* React Native. (2024). *FlatList API Reference*. จาก https://reactnative.dev/docs/flatlist
+* React Native. (2024). *SectionList API Reference*. จาก https://reactnative.dev/docs/sectionlist
 
 ---
 

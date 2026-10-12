@@ -14,8 +14,8 @@
 <View style={{ width: 100, height: 100, backgroundColor: 'red' }} />
 ```
 
-### 2. แบบ StyleSheet.create (แนะนำ) (React Native, 2024)
-เป็นการประกาศชุดสไตล์ภายนอกคอมโพเนนต์ ทำให้แยกส่วนการแสดงผลและสไตล์ชัดเจน ตัวคอมไพเลอร์ของ React Native สามารถแปลรหัสและแคชโครงสร้างสไตล์นี้ส่งไปยังฝั่งระบบปฏิบัติการได้มีประสิทธิภาพสูงกว่า:
+### 2. แบบ StyleSheet.create (แนะนำ)
+เป็นการประกาศชุดสไตล์ภายนอกคอมโพเนนต์ (React Native, 2024) ทำให้แยกส่วนการแสดงผลและสไตล์ชัดเจน ตัวคอมไพเลอร์ของ React Native สามารถแปลรหัสและแคชโครงสร้างสไตล์นี้ส่งไปยังฝั่งระบบปฏิบัติการได้มีประสิทธิภาพสูงกว่า:
 ```tsx
 import { StyleSheet, View } from 'react-native';
 
@@ -212,7 +212,7 @@ const styles = StyleSheet.create({
 
 **การจัดกึ่งกลางและการจัดเรียงด้วย justifyContent และ alignItems:** การกระจายตัวของวัตถุลูกทำได้โดยใช้คุณสมบัติ justifyContent ในการจัดตำแหน่งตามแนวแกนหลัก (เช่น center, space-between หรือ space-around) และใช้ alignItems ในการจัดระเบียบวัตถุลูกตามแนวแกนรอง (เช่น stretch หรือ center) ซึ่งการผสมผสานสองคำสั่งนี้ช่วยให้จัดการเลย์เอาต์ที่ซับซ้อนและจัดข้อมูลให้อยู่กึ่งกลางหน้าจอได้อย่างเป็นระบบ
 
-**การขึ้นบรรทัดใหม่และการเว้นช่องว่าง:** เมื่อวัตถุมีขนาดรวมเกินขอบเขตกล่องคอนเทนเนอร์ เราสามารถกำหนด flexWrap เป็น wrap เพื่อให้วัตถุขึ้นบรรทัดใหม่โดยอัตโนมัติ นอกจากนี้ใน Expo SDK 54 ยังรองรับการใช้งานคุณสมบัติ gap (Expo, 2024), rowGap และ columnGap ซึ่งช่วยให้สามารถระบุช่องไฟหรือระยะห่างระหว่างบล็อกสีและวัตถุต่าง ๆ ได้สะดวกรวดเร็วโดยไม่ต้องประกาศ margin แยกรายตัว
+**การขึ้นบรรทัดใหม่และการเว้นช่องว่าง:** เมื่อวัตถุมีขนาดรวมเกินขอบเขตกล่องคอนเทนเนอร์ เราสามารถกำหนด flexWrap เป็น wrap เพื่อให้วัตถุขึ้นบรรทัดใหม่โดยอัตโนมัติ นอกจากนี้ใน Expo SDK 54 ยังรองรับการใช้งานคุณสมบัติ gap (Expo, 2024) rowGap และ columnGap ซึ่งช่วยให้สามารถระบุช่องไฟหรือระยะห่างระหว่างบล็อกสีและวัตถุต่าง ๆ ได้สะดวกรวดเร็วโดยไม่ต้องประกาศ margin แยกรายตัว
 
 **โค้ดตัวอย่างหน้าเลย์เอาต์โครงสร้าง Grid จำลอง:** ตัวอย่างการนำความรู้การจัดหน้าจอด้วย Flexbox มาใช้ร่วมกันจะเห็นได้ชัดจากการสร้างเลย์เอาต์แบบตาราง Grid ขนาด 2x2 โดยใช้ flexDirection: 'row' ร่วมกับ flexWrap: 'wrap' และการกำหนดระยะห่างด้วย gap โดยอาศัย alignItems: 'center' และ justifyContent: 'center' ในการจัดกล่องย่อยแต่ละใบให้เนื้อหาภายในอยู่ตรงกึ่งกลางอย่างสมบูรณ์
 
@@ -221,8 +221,9 @@ const styles = StyleSheet.create({
 
 ## 2.8 แหล่งข้อมูลอ้างอิงและศึกษาเพิ่มเติม (References)
 
-* **React Native.** (2024). *Height and Width*. จาก https://reactnative.dev/docs/height-and-width
-* **React Native.** (2024). *Layout with Flexbox*. จาก https://reactnative.dev/docs/flexbox
+* Expo. (2024). *User Interface and Styling*. จาก https://docs.expo.dev/versions/v54.0.0/develop/user-interface/overview/
+* React Native. (2024). *Height and Width*. จาก https://reactnative.dev/docs/height-and-width
+* React Native. (2024). *Layout with Flexbox*. จาก https://reactnative.dev/docs/flexbox
 
 ---
 

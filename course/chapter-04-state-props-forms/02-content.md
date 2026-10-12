@@ -7,7 +7,7 @@
 ## 4.1 แนวคิดของสถานะ (State) ใน React Native และการใช้งาน useState Hook
 
 ### 1. State คืออะไร?
-**State** คือ ข้อมูลภายในคอมโพเนนต์ (React, 2024)ที่สามารถเปลี่ยนแปลงค่าได้ตลอดเวลา (Mutable) ในแต่ละรอบอายุการทำงาน (Lifecycle) ของคอมโพเนนต์ เมื่อค่าของ State ถูกแก้ไขด้วยฟังก์ชันเฉพาะ React จะทำการวาดคอมโพเนนต์ย่อยชิ้นนั้น ๆ ใหม่บนหน้าจอ (Re-render) ทันที เพื่อสะท้อนการเปลี่ยนแปลงให้ผู้ใช้งานเห็นหน้าจอใหม่
+**State** คือ ข้อมูลภายในคอมโพเนนต์ (React, 2024) ที่สามารถเปลี่ยนแปลงค่าได้ตลอดเวลา (Mutable) ในแต่ละรอบอายุการทำงาน (Lifecycle) ของคอมโพเนนต์ เมื่อค่าของ State ถูกแก้ไขด้วยฟังก์ชันเฉพาะ React จะทำการวาดคอมโพเนนต์ย่อยชิ้นนั้น ๆ ใหม่บนหน้าจอ (Re-render) ทันที เพื่อสะท้อนการเปลี่ยนแปลงให้ผู้ใช้งานเห็นหน้าจอใหม่
 
 ### 2. การเรียกใช้งาน useState Hook
 ใน Functional Components เราประกาศสถานะเริ่มต้นและฟังก์ชันในการเปลี่ยนแปลงค่าสเตตผ่าน `useState` Hook (React, 2024):
@@ -549,9 +549,9 @@ const styles = StyleSheet.create({
 
 ## 4.8 แหล่งข้อมูลอ้างอิงและศึกษาเพิ่มเติม (References)
 
-* **React.** (2024). *State: A Component's Memory*. จาก https://react.dev/learn/state-a-components-memory
-* **React.** (2024). *Synchronizing with Effects*. จาก https://react.dev/learn/synchronizing-with-effects
-* **React Native.** (2024). *Handling Text Input*. จาก https://reactnative.dev/docs/handling-text-input
+* React. (2024). *State: A Component's Memory*. จาก https://react.dev/learn/state-a-components-memory
+* React. (2024). *Synchronizing with Effects*. จาก https://react.dev/learn/synchronizing-with-effects
+* React Native. (2024). *Handling Text Input*. จาก https://reactnative.dev/docs/handling-text-input
 
 ---
 

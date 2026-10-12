@@ -4,9 +4,9 @@
 
 ---
 
-## 8.1 ความเข้าใจและการติดตั้ง AsyncStorage (React Native Async Storage, 2024)
+## 8.1 ความเข้าใจและการติดตั้ง AsyncStorage
 
-แอปพลิเคชันโดยทั่วไป หากเก็บตัวแปรข้อมูลไว้บนระดับสถานะ (State) ของ React ข้อมูลเหล่านั้นจะสูญหายทันทีที่ผู้ใช้ปิดแอป หรือเครื่องโทรศัพท์แบตเตอรี่หมด เพื่อรักษาสภาพความคงอยู่ของข้อมูล (Data Persistence) เช่น การจดจำชื่อโปรไฟล์ หรือโทเค็นการล็อกอิน (Auth Token) เราจะใช้หน่วยเก็บข้อมูลถาวรประเภทคีย์-ค่า (Key-Value Storage) ที่เรียกว่า **AsyncStorage**
+แอปพลิเคชันโดยทั่วไป หากเก็บตัวแปรข้อมูลไว้บนระดับสถานะ (State) ของ React ข้อมูลเหล่านั้นจะสูญหายทันทีที่ผู้ใช้ปิดแอป หรือเครื่องโทรศัพท์แบตเตอรี่หมด เพื่อรักษาสภาพความคงอยู่ของข้อมูล (Data Persistence) เช่น การจดจำชื่อโปรไฟล์ หรือโทเค็นการล็อกอิน (Auth Token) เราจะใช้หน่วยเก็บข้อมูลถาวรประเภทคีย์-ค่า (Key-Value Storage) ที่เรียกว่า **AsyncStorage** (React Native Async Storage, 2024)
 
 ### คุณสมบัติหลักของ AsyncStorage:
 * **Asynchronous (ทำงานแบบไม่ประสานเวลา):** ทุกคำสั่งการอ่าน เขียน หรือลบข้อมูล จะทำงานเบื้องหลังโดยไม่บล็อกการทริกเกอร์แอนิเมชันหรือการวาดหน้าจอ (คืนค่าเป็น Promise)
@@ -106,9 +106,9 @@ export const getUserProfile = async (): Promise<UserProfile | null> => {
 
 ---
 
-## 8.4 การดึงข้อมูลจาก API ด้วย Fetch (MDN Web Docs, 2024) (HTTP GET)
+## 8.4 การดึงข้อมูลจาก API ด้วย Fetch (HTTP GET)
 
-นอกเหนือจากการเก็บข้อมูลภายในเครื่องแล้ว โมบายแอปพลิเคชันส่วนใหญ่จำเป็นต้องมีการทำงานร่วมกับระบบเซิร์ฟเวอร์หลังบ้านผ่านสถาปัตยกรรม REST API คำสั่งมาตรฐานที่รองรับการใช้งานใน Expo โดยไม่ต้องติดตั้งไลบรารีภายนอกเพิ่มคือ **`fetch()`**
+นอกเหนือจากการเก็บข้อมูลภายในเครื่องแล้ว โมบายแอปพลิเคชันส่วนใหญ่จำเป็นต้องมีการทำงานร่วมกับระบบเซิร์ฟเวอร์หลังบ้านผ่านสถาปัตยกรรม REST API คำสั่งมาตรฐานที่รองรับการใช้งานใน Expo โดยไม่ต้องติดตั้งไลบรารีภายนอกเพิ่มคือ **`fetch()`** (MDN Web Docs, 2024)
 
 ตัวอย่างคำสั่งดึงข้อมูลล่าสุด (GET) จากเซิร์ฟเวอร์ JSONPlaceholder:
 
@@ -371,11 +371,11 @@ const styles = StyleSheet.create({
 
 ---
 
-## 8.8 แหล่งข้อมูลอ้างอิงและศึกษาเพิ่มเติม (References)
+## 8.9 แหล่งข้อมูลอ้างอิงและศึกษาเพิ่มเติม (References)
 
-* **Expo.** (2024). *Using SQLite*. จาก https://docs.expo.dev/versions/v54.0.0/sdk/sqlite/
-* **MDN Web Docs.** (2024). *Using the Fetch API*. จาก https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
-* **React Native Async Storage.** (2024). *Async Storage Documentation*. จาก https://react-native-async-storage.github.io/async-storage/docs/install/
+* Expo. (2024). *Using SQLite*. จาก https://docs.expo.dev/versions/v54.0.0/sdk/sqlite/
+* MDN Web Docs. (2024). *Using the Fetch API*. จาก https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+* React Native Async Storage. (2024). *Async Storage Documentation*. จาก https://react-native-async-storage.github.io/async-storage/docs/install/
 
 ---
 

@@ -19,9 +19,9 @@
 
 ---
 
-## 9.2 การเข้าถึงพิกัดตำแหน่งอุปกรณ์ด้วย expo-location (Expo, 2024)
+## 9.2 การเข้าถึงพิกัดตำแหน่งอุปกรณ์ด้วย expo-location
 
-เพื่อดึงพิกัดตำแหน่งละติจูดและลองจิจูดจากอุปกรณ์เนทีฟ เราจะใช้งานไลบรารีอย่างเป็นทางการของ Expo คือ **`expo-location`**
+เพื่อดึงพิกัดตำแหน่งละติจูดและลองจิจูดจากอุปกรณ์เนทีฟ เราจะใช้งานไลบรารีอย่างเป็นทางการของ Expo คือ **`expo-location`** (Expo, 2024)
 
 ### การติดตั้งไลบรารี:
 ```bash
@@ -126,9 +126,9 @@ const getAddressFromCoords = async (latitude: number, longitude: number) => {
 
 ---
 
-## 9.4 การติดตั้งและจัดแสดงแผนที่ด้วย react-native-maps (React Native Maps, 2024)
+## 9.4 การติดตั้งและจัดแสดงแผนที่ด้วย react-native-maps
 
-ในการเรนเดอร์ภาพแผนที่เชิงโต้ตอบ (Interactive Maps) ที่ผู้ใช้งานสามารถย่อขยาย ดึงแผนที่ และมองเห็นความตื้นลึกของระดับสิ่งปลูกสร้างอย่างไหลลื่น เราจะติดตั้งใช้งานไลบรารีภายนอกยอดนิยมคือ **`react-native-maps`**
+ในการเรนเดอร์ภาพแผนที่เชิงโต้ตอบ (Interactive Maps) ที่ผู้ใช้งานสามารถย่อขยาย ดึงแผนที่ และมองเห็นความตื้นลึกของระดับสิ่งปลูกสร้างอย่างไหลลื่น เราจะติดตั้งใช้งานไลบรารีภายนอกยอดนิยมคือ **`react-native-maps`** (React Native Maps, 2024)
 
 ### การติดตั้ง:
 ```bash
@@ -187,9 +187,9 @@ const styles = StyleSheet.create({
 
 ---
 
-## 9.6 การใช้งานเซนเซอร์ตรวจความเร่งด้วย expo-sensors (Expo, 2024) (Accelerometer)
+## 9.6 การใช้งานเซนเซอร์ตรวจความเร่งด้วย expo-sensors (Accelerometer)
 
-อุปกรณ์สมาร์ทโฟนสมัยใหม่ทุกเครื่องจะมีชิปเซนเซอร์ภายในเครื่องสำหรับวัดมุม การหมุน และความเร่ง ไลบรารี **`expo-sensors`** ช่วยให้ผู้พัฒนาสามารถอ่านค่าพฤติกรรมกายภาพของมือถือได้ง่าย
+อุปกรณ์สมาร์ทโฟนสมัยใหม่ทุกเครื่องจะมีชิปเซนเซอร์ภายในเครื่องสำหรับวัดมุม การหมุน และความเร่ง ไลบรารี **`expo-sensors`** (Expo, 2024) ช่วยให้ผู้พัฒนาสามารถอ่านค่าพฤติกรรมกายภาพของมือถือได้ง่าย
 
 ### การดาวน์โหลดแพ็คเกจ:
 ```bash
@@ -291,11 +291,11 @@ const handleOpenSettings = () => {
 
 ---
 
-## 9.8 แหล่งข้อมูลอ้างอิงและศึกษาเพิ่มเติม (References)
+## 9.9 แหล่งข้อมูลอ้างอิงและศึกษาเพิ่มเติม (References)
 
-* **Expo.** (2024). *Location*. จาก https://docs.expo.dev/versions/v54.0.0/sdk/location/
-* **Expo.** (2024). *Sensors*. จาก https://docs.expo.dev/versions/v54.0.0/sdk/sensors/
-* **React Native Maps.** (2024). *React Native Maps Installation*. จาก https://github.com/react-native-maps/react-native-maps
+* Expo. (2024). *Location*. จาก https://docs.expo.dev/versions/v54.0.0/sdk/location/
+* Expo. (2024). *Sensors*. จาก https://docs.expo.dev/versions/v54.0.0/sdk/sensors/
+* React Native Maps. (2024). *React Native Maps Installation*. จาก https://github.com/react-native-maps/react-native-maps
 
 ---
 

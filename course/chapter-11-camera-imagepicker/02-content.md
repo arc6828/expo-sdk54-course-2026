@@ -41,9 +41,9 @@ const requestGalleryPermission = async () => {
 
 ---
 
-## 11.2 การใช้งาน CameraView เพื่อพรีวิว (Expo, 2024)ภาพสด (Camera Live Preview)
+## 11.2 การใช้งาน CameraView เพื่อพรีวิวภาพสด (Camera Live Preview)
 
-ใน Expo SDK 54 คอมโพเนนต์หลักที่ใช้เปิดช่องเลนส์รับภาพสดคือ **`CameraView`** (ถูกพัฒนามาทดแทนคอมโพเนนต์ `Camera` ตัวเดิม) 
+ใน Expo SDK 54 คอมโพเนนต์หลักที่ใช้เปิดช่องเลนส์รับภาพสดคือ **`CameraView`** (ถูกพัฒนามาทดแทนคอมโพเนนต์ `Camera` ตัวเดิม) (Expo, 2024) 
 
 ### พร็อพส์หลักที่ใช้ควบคุม `<CameraView>`:
 * **`facing`**: กำหนดประเภทเลนส์ที่จะใช้เปิด รับค่า `'front'` (กล้องหน้า) หรือ `'back'` (กล้องหลัง)
@@ -133,9 +133,9 @@ export default function CaptureComponent() {
 
 ---
 
-## 11.4 การเลือกรูปภาพและสื่อผ่าน expo-image-picker (Expo, 2024) (Image Library API)
+## 11.4 การเลือกรูปภาพและสื่อผ่าน expo-image-picker (Image Library API)
 
-ในการพัฒนาฟีเจอร์ดึงไฟล์ภาพที่มีอยู่แล้วในคลังอัลบั้มของเครื่องขึ้นมาจัดแสดง เราจะใช้ไลบรารีมาตรฐานยอดนิยมคือ **`expo-image-picker`** ผ่านคำสั่ง Asynchronous ชื่อ **`launchImageLibraryAsync()`**:
+ในการพัฒนาฟีเจอร์ดึงไฟล์ภาพที่มีอยู่แล้วในคลังอัลบั้มของเครื่องขึ้นมาจัดแสดง เราจะใช้ไลบรารีมาตรฐานยอดนิยมคือ **`expo-image-picker`** (Expo, 2024) ผ่านคำสั่ง Asynchronous ชื่อ **`launchImageLibraryAsync()`**:
 
 ```tsx
 import React, { useState } from 'react';
@@ -174,9 +174,9 @@ const styles = StyleSheet.create({
 
 ---
 
-## 11.5 ระบบจัดการไฟล์แบบที่ 1: Private Sandbox Storage (Expo, 2024) (แอปมองเห็นเฉพาะตัว)
+## 11.5 ระบบจัดการไฟล์แบบที่ 1: Private Sandbox Storage (แอปมองเห็นเฉพาะตัว)
 
-รูปภาพที่ได้จากการสั่งถ่ายด้วยกล้องถ่ายรูป หรือได้จากการดึงภาพของ Image Picker จะได้รับการสร้างเป็นที่อยู่พาธชั่วคราวอยู่ใน **Cache Directory** เสมอ (เช่น `file:///.../Caches/xxx.jpg`)
+รูปภาพที่ได้จากการสั่งถ่ายด้วยกล้องถ่ายรูป หรือได้จากการดึงภาพของ Image Picker จะได้รับการสร้างเป็นที่อยู่พาธชั่วคราวอยู่ใน **Cache Directory** เสมอ (Expo, 2024) (เช่น `file:///.../Caches/xxx.jpg`)
 
 ในระบบปฏิบัติการ iOS และ Android พื้นที่ความจำของแอปพลิเคชันจะถูกจำกัดอยู่ในเขตปลอดภัยที่เรียกว่า **Sandbox** โดยแบ่งออกเป็นสองระดับหลัก ๆ:
 
@@ -353,11 +353,11 @@ const uploadToSupabaseCloud = async (localFileUri: string): Promise<string | nul
 
 ---
 
-## 11.8 แหล่งข้อมูลอ้างอิงและศึกษาเพิ่มเติม (References)
+## 11.9 แหล่งข้อมูลอ้างอิงและศึกษาเพิ่มเติม (References)
 
-* **Expo.** (2024). *Camera*. จาก https://docs.expo.dev/versions/v54.0.0/sdk/camera/
-* **Expo.** (2024). *FileSystem*. จาก https://docs.expo.dev/versions/v54.0.0/sdk/filesystem/
-* **Expo.** (2024). *ImagePicker*. จาก https://docs.expo.dev/versions/v54.0.0/sdk/imagepicker/
+* Expo. (2024). *Camera*. จาก https://docs.expo.dev/versions/v54.0.0/sdk/camera/
+* Expo. (2024). *FileSystem*. จาก https://docs.expo.dev/versions/v54.0.0/sdk/filesystem/
+* Expo. (2024). *ImagePicker*. จาก https://docs.expo.dev/versions/v54.0.0/sdk/imagepicker/
 
 ---
 
