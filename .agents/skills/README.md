@@ -6,12 +6,13 @@
 
 ## 📊 สรุปภาพรวม (Skills Summary)
 
-ปัจจุบันในโปรเจกต์มี Custom Skills ทั้งหมด **2 Skills** (และ Built-in Skills ของระบบอีก 7 รายการ):
+ปัจจุบันในโปรเจกต์มี Custom Skills ทั้งหมด **3 Skills** (และ Built-in Skills ของระบบอีก 7 รายการ):
 
 | ลำดับ | ชื่อ Skill (`name`) | โฟลเดอร์ที่เก็บ | หน้าที่หลัก |
 | :---: | :--- | :--- | :--- |
 | **1** | [`generate-course-docx`](./generate-course-docx/SKILL.md) | `.agents/skills/generate-course-docx/` | สร้างและกรอกข้อมูลเอกสารประกอบการสอน `.docx` ทั้ง 35 ไฟล์ (`01`–`35`) จากฟอร์มหาวิทยาลัย (`course/ฟอร์ม/*.doc`), `COURSE_METADATA.md` และไฟล์เนื้อหา Markdown ทั้ง 13 บท ด้วย Word COM |
 | **2** | [`export-docx-to-pdf`](./export-docx-to-pdf/SKILL.md) | `.agents/skills/export-docx-to-pdf/` | แปลงไฟล์ `.docx` ใน `course/docx-v2/` ให้เป็นไฟล์ `.pdf` ใน `course/pdf/` (รองรับทั้งแบบคงไฮไลท์สีเหลืองไว้ตรวจทาน และแบบลบไฮไลท์สีเหลืองออกเพื่อส่งพิมพ์จริง) |
+| **3** | [`merge-course-docx`](./merge-course-docx/SKILL.md) | `.agents/skills/merge-course-docx/` | รวมไฟล์ `.docx` ทั้ง 35 ไฟล์ (`01`–`35`) เข้าเป็นไฟล์รวมเล่มไฟล์เดียว (`00-All-Merged` และ `00-All-Merged-Clean`) ทั้งรูปแบบ `.docx` และ `.pdf` พร้อมจัดเลขหน้าต่อเนื่องตรงตามสารบัญ |
 
 ---
 
@@ -50,6 +51,19 @@
 
   # แปลงเฉพาะไฟล์ที่ระบุ
   python .agents/skills/export-docx-to-pdf/scripts/export_docx_to_pdf.py --files 01-CoverOut.docx 04-Content.docx
+  ```
+
+---
+
+### 3. `merge-course-docx` (รวมไฟล์ `.docx` ทั้ง 35 ไฟล์เป็นเล่มเดียวพร้อมส่งออก `.pdf`)
+- **ไฟล์คำสั่งหลัก:** [`.agents/skills/merge-course-docx/SKILL.md`](./merge-course-docx/SKILL.md)
+- **สคริปต์ภายใน (`scripts/`):**
+  - [`merge_course_docx.py`](./merge-course-docx/scripts/merge_course_docx.py) — รวมไฟล์ `01` ถึง `35` คั่นด้วย `Section Break (Next Page)` พร้อมรันเลขหน้าต่อเนื่องทั้งส่วนนำ (`(1)`..`(n)`) และส่วนเนื้อหาหลัก (`1`..`N`) และสร้างทั้งเวอร์ชันมีไฮไลท์สีเหลือง (`00-All-Merged`) และเวอร์ชันลบไฮไลท์สีเหลือง (`00-All-Merged-Clean`)
+- **ตัวอย่างคำสั่งแชทเรียกใช้:**
+  - *"ช่วยรวมไฟล์ docx ทั้งหมดใน docx-v2 เป็นไฟล์เดียวและทำ PDF ให้ด้วย"*
+- **ตัวอย่างการรันผ่าน Terminal:**
+  ```powershell
+  python .agents/skills/merge-course-docx/scripts/merge_course_docx.py
   ```
 
 ---
